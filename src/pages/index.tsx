@@ -1,3 +1,5 @@
+import HomeSection from "@/components/Home";
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -9,11 +11,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/cryptojr-ico.png" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+
       </Head>
       <main>
+        <Navbar />
+        
+        <HomeSection />
         <div >
           <p>Quem somos?</p>
           <p>O que oferecemos?</p>
