@@ -8,6 +8,7 @@ const theme = extendTheme({
     black: "#000000",
     lightGray: "#DBD3D3",
     white: "#FFFFFF",
+    "primary.600": "#dd841b",
   },
   fonts: {
     body: "Inter, sans-serif",
