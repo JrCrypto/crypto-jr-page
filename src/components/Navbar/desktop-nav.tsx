@@ -39,7 +39,7 @@ export const DesktopNav = () => {
                 href={navItem.href ?? "#"}
                 onClick={() => scrollToElement(navItem.href ?? "#")}
                 fontSize={"sm"}
-                fontWeight={600}
+                fontWeight={800}
                 color={"white"}
                 _hover={{
                   textDecoration: "none",
