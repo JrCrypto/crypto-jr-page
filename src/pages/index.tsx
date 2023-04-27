@@ -20,11 +20,8 @@ export default function Home() {
         <Navbar />
         
         <HomeSection />
-        <div >
-          <p>Quem somos?</p>
-          <p>O que oferecemos?</p>
-          <p>Faça parte da nossa equipe</p>
-        </div>
+
+        <div id="about-us"></div>
       </main>
     </>
   );
