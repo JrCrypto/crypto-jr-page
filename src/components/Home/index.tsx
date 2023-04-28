@@ -34,7 +34,7 @@ const HomeSection = () => {
         direction="column"
         justifyContent="center"
         spacing={6}
-        maxW="550px"
+        maxW="650px"
       >
         <Image
           src="/images/crypto-logo-home.png"
@@ -46,8 +46,8 @@ const HomeSection = () => {
         <Text
           fontSize="2.2rem"
           textAlign="left"
-          lineHeight="1.375"
           fontWeight="400"
+          letterSpacing="-0.05em"
           color={"white"}
         >
           desenvolvendo novas pessoas para um novo mercado
