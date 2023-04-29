@@ -8,11 +8,11 @@ export interface NavItem {
 export const NAV_ITEMS: Array<NavItem> = [
   {
     label: "SOBRE NÓS",
-    href: "#",
+    href: "#about-us",
   },
   {
     label: "ARTIGOS",
-    href: "#",
+    href: "/artigos",
   },
   {
     label: "SERVIÇOS",
@@ -20,10 +20,10 @@ export const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "MEMBROS",
-    href: "#",
+    href: "/membros",
   },
   {
     label: "FAQ",
-    href: "#",
+    href: "/faq",
   },
 ];

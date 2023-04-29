@@ -11,8 +11,22 @@ import {
 import { NAV_ITEMS } from "./nav-itens";
 import { DesktopSubNav } from "./desktop-sub-nav";
 
+interface ElementWithOffsetTop extends Element {
+  offsetTop: number;
+}
+
 export const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
+
+  const scrollToElement = (id: string) => {
+    const target = document.querySelector(id) as ElementWithOffsetTop;
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop + 200, //TODO: Testar quando o componentes estiverm funcionando se Subtrai a altura do cabeçalho
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <Stack direction={"row"} align="flex-end" h="100%" spacing={10} mr={"9rem"}>
@@ -23,8 +37,9 @@ export const DesktopNav = () => {
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
+                onClick={() => scrollToElement(navItem.href ?? "#")}
                 fontSize={"sm"}
-                fontWeight={600}
+                fontWeight={800}
                 color={"white"}
                 _hover={{
                   textDecoration: "none",

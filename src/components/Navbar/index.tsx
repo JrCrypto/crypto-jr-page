@@ -14,6 +14,7 @@ import { FaHamburger, FaTimes } from "react-icons/fa";
 import { DesktopNav } from "./desktop-nav";
 import { MobileNav } from "./mobile-nav";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -21,7 +22,7 @@ export default function WithSubnavigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
+      const isScrolled = window.scrollY > 100;
       setScrolled(isScrolled);
     };
 
@@ -63,13 +64,17 @@ export default function WithSubnavigation() {
 
         <Flex
           flex={{ base: 1 }}
-          justify={{ base: "center", md: "space-between" }}
+          justify={{ base: "center", md: scrolled ? "space-between" : "flex-end" }}
+          align={"center"}
         >
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          ></Text>
+          {scrolled && (
+            <Image
+              src="/images/crypto-logo-home.png"
+              alt="Logo Crypto JR"
+              width={150}
+              height={180}
+            />
+          )}
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />

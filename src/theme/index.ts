@@ -20,23 +20,30 @@ const theme = extendTheme({
   },
   components: {
     Button: {
-      baseStyle: {
-        fontWeight: "bold",
-        textTransform: "uppercase",
-        bg: "primary.500",
-        color: "white",
-        _hover: {
-          bg: "primary.600",
-        },
-      },
       variants: {
         outline: {
-          borderColor: "primary.500",
-          color: "primary.500",
+          borderColor: "primary",
+          color: "primary",
+          bg:"none",
           _hover: {
-            bg: "primary.50",
+            bg: "primary.600",
+            color:"white"
           },
         },
+        default: {
+          fontWeight: "bold",
+          radius:20,
+          textTransform: "uppercase",
+          bg: "primary",
+          color: "white",
+          _hover: {
+            bg: "primary.600",
+          },
+        },
+      },
+       // Definindo a variante outline como padrão
+       defaultProps: {
+        variant: "default",
       },
     },
   },
