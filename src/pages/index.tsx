@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import HomeSection from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
@@ -22,6 +23,8 @@ export default function Home() {
         <HomeSection />
 
         <div id="about-us"></div>
+
+        <Footer/>
       </main>
     </>
   );

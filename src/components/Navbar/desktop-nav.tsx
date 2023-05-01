@@ -19,7 +19,7 @@ export const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   const scrollToElement = (id: string) => {
-    const target = document.querySelector(id) as ElementWithOffsetTop;
+    const target = document.getElementById(id) as ElementWithOffsetTop;
     if (target) {
       window.scrollTo({
         top: target.offsetTop + 200, //TODO: Testar quando o componentes estiverm funcionando se Subtrai a altura do cabeçalho
@@ -41,6 +41,7 @@ export const DesktopNav = () => {
                 fontSize={"sm"}
                 fontWeight={800}
                 color={"white"}
+                isExternal={!Boolean(navItem.href && navItem.href.indexOf("/"))}
                 _hover={{
                   textDecoration: "none",
                   color: "primary",
