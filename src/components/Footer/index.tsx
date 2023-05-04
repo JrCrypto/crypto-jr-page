@@ -42,33 +42,33 @@ const Footer = () => {
       alignItems="center"
       direction={{ base: "column", md: "row" }}
     >
-      <Stack direction="column" alignItems="center" maxW={"20%"}>
+      <Stack direction="column"  mt="15px" alignItems="center" maxW={"30%"}>
         <Heading fontSize="18px" color={"white"}>
           Endereço
         </Heading>
-        <Text color="gray.400" mb="15px" align={"center"}>
+        <Text color="gray.400" align={"center"}>
           R. Eng. Agronômico Andrei Cristian Ferreira, s/n –
           Trindade,Florianópolis – SC, 88040-900
         </Text>
       </Stack>
 
-      <Stack direction="column" alignItems="center">
+      <Stack direction="column" alignItems="center"  mt="15px">
         <Heading fontSize="18px" color={"white"}>
           Email
         </Heading>
-        <Text color="gray.400" mb="15px">
+        <Text color="gray.400" >
         contato@cryptojr.org
         </Text>
       </Stack>
 
-      <Stack direction="column" alignItems="center">
-        <Heading fontSize="18px" mb="15px" color={"white"}>
+      <Stack direction="column" alignItems="center" mt="15px" >
+        <Heading fontSize="18px" color={"white"}>
           Siga-nos
         </Heading>
         <Stack
           direction="row"
           spacing={5}
-          pt={{ base: 4, md: 0 }}
+          pt={{ base: 4, md: 3 }}
           alignItems="center"
         >
           {accounts.map((sc, index) => (
