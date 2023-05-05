@@ -15,6 +15,8 @@ import {
 import { FaDiscord } from "react-icons/fa";
 import Image from "next/image";
 
+const urlDiscord = 'https://discord.gg/UtYrJztJAW';
+
 const HomeSection = () => {
   return (
     <Stack
@@ -55,7 +57,8 @@ const HomeSection = () => {
 
         <Flex
           as={"a"}
-          href="https://discord.com/invite/dcJ3bJZS" //todo: tentar por o link como varivel de ambiente
+          href={urlDiscord}
+          target={"_blank"}
           justify="center"
           h={10}
           w={250}
