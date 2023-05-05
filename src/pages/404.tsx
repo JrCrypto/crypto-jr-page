@@ -21,9 +21,9 @@ export const NotFound = () => {
           <Heading size={"lg"} color="primary">
             404 Error
           </Heading>
-          <Heading>Page not found</Heading>
+          <Heading>Página não encontrada</Heading>
           <Text>
-            Sorry, the page you are looking for doesn't exist or has been moved.
+          Desculpe, a página que você está procurando não existe.
           </Text>
           <Box>
             <Button variant={"outline"} as={"a"} href="/">
