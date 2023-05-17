@@ -18,7 +18,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 }, []);
 
     return (
-        <Particles
+      <Particles
+            canvasClassName='canvasParticle'
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -114,8 +115,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                       }
                     }
                   },
-                  'retina_detect': true
+                  'retina_detect': true,
+                  fullScreen: {
+                    enable: false,
+                    zIndex: 1,
+                  },
             }}
-        />
+      />
     );
 };
