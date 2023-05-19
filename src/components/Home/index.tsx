@@ -3,13 +3,9 @@ import * as React from "react";
 import {
   chakra,
   Stack,
-  HStack,
   Text,
-  Box,
   Flex,
-  Link,
   Icon,
-  useColorModeValue,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { FaDiscord } from "react-icons/fa";
