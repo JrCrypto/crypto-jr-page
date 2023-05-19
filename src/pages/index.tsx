@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import HomeSection from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -15,16 +16,17 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-
       </Head>
       <main>
         <Navbar />
-        
+
         <HomeSection />
 
-        <div id="about-us"></div>
+        <div id="about-us">
+          <About />
+        </div>
 
-        <Footer/>
+        <Footer />
       </main>
     </>
   );
