@@ -14,13 +14,14 @@ import {
 // Here we have used react-icons package for the icons
 import { FaDiscord } from "react-icons/fa";
 import Image from "next/image";
+import { Particle } from '../Particle';
 
 const urlDiscord = 'https://discord.gg/UtYrJztJAW';
 
 const HomeSection = () => {
   return (
     <Stack
-      direction={{ base: "column", md: "row" }}
+    direction={{ base: "column", md: "row" }}
       backgroundPosition="center center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
@@ -29,15 +30,19 @@ const HomeSection = () => {
         "linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/1267600.jpg)"
       }
     >
+      
       <Stack
         p={{ base: 5, md: 10 }}
         pos="relative"
         zIndex={1}
         direction="column"
-        justifyContent="center"
+        justifyContent="column"
         spacing={6}
-        maxW="650px"
-      >
+        maxW="850px"
+        >
+        
+        <Particle/>
+        
         <Image
           src="/images/crypto-logo-home.png"
           alt="Logo Crypto JR"
@@ -54,7 +59,6 @@ const HomeSection = () => {
         >
           desenvolvendo novas pessoas para um novo mercado
         </Text>
-
         <Flex
           as={"a"}
           href={urlDiscord}
