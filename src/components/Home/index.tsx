@@ -1,27 +1,18 @@
 import * as React from "react";
 
-import {
-  chakra,
-  Stack,
-  HStack,
-  Text,
-  Box,
-  Flex,
-  Link,
-  Icon,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Stack, Text, Flex, Icon } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { FaDiscord } from "react-icons/fa";
 import Image from "next/image";
-import { Particle } from '../Particle';
+import { Particle } from "../Particle";
 
-const urlDiscord = 'https://discord.gg/UtYrJztJAW';
+const urlDiscord = "https://discord.gg/UtYrJztJAW";
 
 const HomeSection = () => {
   return (
-    <Stack
-    direction={{ base: "column", md: "row" }}
+    <Stack  
+      direction={{ base: "column", md: "row" }}
+      alignItems={"center"}
       backgroundPosition="center center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
@@ -30,7 +21,6 @@ const HomeSection = () => {
         "linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/1267600.jpg)"
       }
     >
-      
       <Stack
         p={{ base: 5, md: 10 }}
         pos="relative"
@@ -38,11 +28,10 @@ const HomeSection = () => {
         direction="column"
         justifyContent="column"
         spacing={6}
-        maxW="850px"
-        >
-        
-        <Particle/>
-        
+        maxW="40%"
+      >
+        <Particle />
+
         <Image
           src="/images/crypto-logo-home.png"
           alt="Logo Crypto JR"
