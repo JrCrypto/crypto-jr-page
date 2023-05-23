@@ -1,49 +1,22 @@
 import React from "react";
 import { Box, Flex, chakra, Grid, Text } from "@chakra-ui/react";
-import { createIcon, Icon } from '@chakra-ui/icons';
-
+import { Icon } from '@chakra-ui/icons';
+import { VectorIcon } from "@/components/Icons";
 const urlDiscord = "https://discord.gg/UtYrJztJAW";
-
-const VectorIcon = createIcon({
-    displayName: 'Vector',
-    viewBox: '0 0 131 129',
-    path: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="42" fill="none">
-
-            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="m4 4 29 16.849L4 37.697" />
-        </svg>
-    ),
-});
 
 const CTA = () => {
     return (
         <>
-            <Grid templateColumns="repeat(2, 1fr)" gap={6} bg={"lightGray"}>
-                <Box
-                    sx={{
-                        display: 'flexbox',
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: 10,
-                    }}>
-                    <Flex >
-                        <Text fontSize={'60px'} fontWeight={700} textAlign={'center'} letterSpacing={'-0.04em'} width={'325px'} height={'198px'}>
-                            Faça parte da nossa equipe
-                        </Text>
+            <Flex justifyContent={'center'} >
+                <Flex maxW={'40%'} alignContent={'center'} >
+                    <Text fontSize={'60px'} fontWeight={700} lineHeight={'66px'} textAlign={'center'} letterSpacing={'-0.04em'} >
+                        Faça parte da nossa equipe
+                        {<Icon as={VectorIcon} w={131} h={129} />}
+                        {<Icon as={VectorIcon} w={131} h={129} />}
+                    </Text>
 
-                    </Flex>
-
-                    <Icon as={VectorIcon} w={30} h={34} />
-                    <Icon as={VectorIcon} w={29} h={33} />
-
-                </Box>
-                <Box
-                    sx={{
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: 10,
-                    }}
-                >
+                </Flex>
+                <Flex flexDirection={'column'} justifyContent={'center'}>
                     <Flex
                         as={"a"}
                         href={urlDiscord}
@@ -58,6 +31,7 @@ const CTA = () => {
                         borderRadius={"25px"}
                         _hover={{ bg: "primary.600" }}
                         textDecoration={"none"}
+
                     >
                         <chakra.span
                             fontWeight={"600"}
@@ -90,11 +64,11 @@ const CTA = () => {
                             color={"black"}
                             mr={5}
                         >
-                            Proceso Seletivo
+                            Processo Seletivo
                         </chakra.span>
                     </Flex>
-                </Box>
-            </Grid>
+                </Flex>
+            </Flex >
         </>
     );
 };
