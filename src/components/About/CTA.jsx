@@ -7,7 +7,7 @@ const urlDiscord = "https://discord.gg/UtYrJztJAW";
 const CTA = () => {
     return (
         <>
-            <Flex justifyContent={'center'} >
+            <Flex justifyContent={'center'} bg="lightGray">
                 <Flex maxW={'40%'} alignContent={'center'} >
                     <Text fontSize={'60px'} fontWeight={700} lineHeight={'66px'} textAlign={'center'} letterSpacing={'-0.04em'} >
                         Faça parte da nossa equipe
