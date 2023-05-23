@@ -7,15 +7,14 @@ const AboutInformation = () => {
   return (
     <Flex
       bg="lightGray"
-      padding="10"
       flexDirection={"column"}
       alignItems={"center"}
-      gap={10}
-      p={100}
+      gap={15}
+      p={{base:8, md: 85}}
     >
-      <Box maxW={"60%"}>
+      <Box maxW={{base: "100%", md: "60%"}}>
         <Text
-          fontSize={"40px"}
+          fontSize={"2.5rem"}
           fontWeight={"700"}
           lineHeight={"44px"}
           letterSpacing={"-0.04em"}
@@ -24,8 +23,9 @@ const AboutInformation = () => {
         >
           Quem somos ?
         </Text>
+
         <Text
-          fontSize={"29px"}
+          fontSize={"1.6rem"}
           fontWeight={"400"}
           lineHeight={"32px"}
           letterSpacing={"-0.04em"}
@@ -37,10 +37,10 @@ const AboutInformation = () => {
         </Text>
       </Box>
 
-      <Box mb={"3rem"} maxW={"60%"}>
+      <Box  maxW={{base: "100%", md: "60%"}}>
         <IdeiaIcon />
         <Text
-          fontSize={"40px"}
+          fontSize={"2.5rem"}
           fontWeight={"700"}
           lineHeight={"44px"}
           letterSpacing={"-0.04em"}
@@ -50,7 +50,7 @@ const AboutInformation = () => {
           O que oferecemos?
         </Text>
         <Text
-          fontSize={"29px"}
+          fontSize={"1.6rem"}
           fontWeight={"400"}
           lineHeight={"32px"}
           letterSpacing={"-0.04em"}
