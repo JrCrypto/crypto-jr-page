@@ -1,7 +1,6 @@
-import { Box, Flex, Grid, GridItem, Icon, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { IdeiaIcon } from "../Icons";
-import { VectorIcon } from "../Icons";
 
 const AboutInformation = () => {
   return (
@@ -10,9 +9,9 @@ const AboutInformation = () => {
       flexDirection={"column"}
       alignItems={"center"}
       gap={15}
-      p={{base:8, md: 85}}
+      p={{ base: 8, md: 85 }}
     >
-      <Box maxW={{base: "100%", md: "60%"}}>
+      <Box maxW={{ base: "100%", md: "60%" }}>
         <Text
           fontSize={"2.5rem"}
           fontWeight={"700"}
@@ -37,7 +36,7 @@ const AboutInformation = () => {
         </Text>
       </Box>
 
-      <Box  maxW={{base: "100%", md: "60%"}}>
+      <Box maxW={{ base: "100%", md: "60%" }}>
         <IdeiaIcon />
         <Text
           fontSize={"2.5rem"}

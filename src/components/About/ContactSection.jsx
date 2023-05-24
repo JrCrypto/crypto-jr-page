@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Flex, chakra, Grid, Text } from "@chakra-ui/react";
+import { Box, Flex, chakra, Text } from "@chakra-ui/react";
 
-const CTA = () => {
+const ContactSection = () => {
   const urlDiscord = "https://discord.gg/UtYrJztJAW";
   const urProcessoSeletivo = "https://discord.gg/UtYrJztJAW";
 
@@ -76,4 +76,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default ContactSection;

@@ -1,10 +1,5 @@
 import { ReactElement } from "react";
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
-import {
-  AprendaIcon,
-  MercadoDeTrabalhoIcon,
-  PraticaIcon,
-} from "@/components/Icons";
+import { Text, Flex } from "@chakra-ui/react";
 import {
   HiOutlineBookOpen,
   HiOutlineUserGroup,
@@ -50,7 +45,7 @@ export default function AboutBanner() {
       justify="space-between"
       color="white"
       bg="black"
-      flexDirection={{base: "column", md: "row"}}
+      flexDirection={{ base: "column", md: "row" }}
       p={45}
       paddingY={35}
     >
