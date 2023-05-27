@@ -14,71 +14,71 @@ import MemberCard from "@/components/MemberCard";
 export default function MemberSection() {
   const cards = [
     {
-      name: "oioioio 1",
+      name: "Membro 1",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
     },
     {
-      name: "oioioio 2",
+      name: "Membro 2",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
 
       image:
         "https://images.unsplash.com/photo-1438183972690-6d4658e3290e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2274&q=80",
     },
     {
-      name: "oioioio 3",
+      name: "Membro 3",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
     },
     {
-      name: "oioioio 32",
+      name: "Membro 32",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
     },
     {
-      name: "oioioio 21",
+      name: "Membro 21",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1438183972690-6d4658e3290e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2274&q=80",
     },
     {
-      name: "oioioio 34",
+      name: "Membro 34",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
     },
     {
-      name: "oioioio 34",
+      name: "Membro 34",
       github: "/github",
       linkedin: "dadsfsdf",
-      role: "snfkjsdf",
+      role: "Cargo XX",
       image:
         "https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
     },
   ];
 
-  const [itemsToShow, setItemsToShow] = useState(cards.slice(0, 5));
+  const [itemsToShow, setItemsToShow] = useState(cards.slice(0, 8));
   const [page, setPage] = useState(0);
 
   const handleSlideChange = (direction: number) => {
     const newPage = page + direction;
-    const startIndex = newPage * 5;
-    let endIndex = startIndex + 5;
+    const startIndex = newPage * 8;
+    let endIndex = startIndex + 8;
 
     if (endIndex > cards.length) {
       endIndex = cards.length;
@@ -128,7 +128,7 @@ export default function MemberSection() {
       </Stack>
 
       <Flex
-        p={28}
+        p={{md:28,sm:10}}
         py={16}
         justifyContent={"space-between"}
         direction={{
@@ -146,7 +146,7 @@ export default function MemberSection() {
           <BiLeftArrowAlt size="40px" />
         </IconButton>
 
-        <Container maxW={"98%"}>
+        <Container maxW={"100%"}>
           <Flex flexWrap="wrap" gridGap={16} justify="center">
             {itemsToShow.map((item, index) => (
               <MemberCard

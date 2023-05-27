@@ -19,7 +19,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
-        py={2}
+        py={6}
         as={Link}
         href={href ?? "#"}
         justify={"space-between"}

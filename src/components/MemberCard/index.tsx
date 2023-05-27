@@ -26,7 +26,7 @@ const Card = ({ name, role, linkedin, github }: MemberProps) => {
   return (
     <Box
       h="354px"
-      w="279px"
+      w={{base: "60%", md:"18%"}}
       boxShadow="lg"
       rounded="md"
       p={6}
@@ -84,6 +84,7 @@ const Card = ({ name, role, linkedin, github }: MemberProps) => {
               icon={<FaLinkedin />}
               rounded="full"
               {...iconProps}
+              
             />
           </Box>
         </Flex>

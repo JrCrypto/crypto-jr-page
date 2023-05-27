@@ -22,13 +22,13 @@ const HomeSection = () => {
       }
     >
       <Stack
-        p={{ base: 5, md: 10 }}
+        p={{ base: 6, md: 10 }}
         pos="relative"
         zIndex={1}
         direction="column"
         justifyContent="column"
         spacing={6}
-        maxW="40%"
+        maxW={{ base: "100%", md: "40%" }}
       >
         <Particle />
 
