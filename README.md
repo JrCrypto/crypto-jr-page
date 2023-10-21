@@ -4,7 +4,23 @@
 
 # [CryptoJR](https://www.cryptojr.org/)
 
-Bem-vindos ao projeto de desenvolvimento do site da CryptoJR - a primeira empresa júnior do Brasil a trabalhar com web3! O objetivo deste projeto é criar um site de fácil acesso, que possibilite aos usuários conhecerem a organização CryptoJr; seu trabalho, inscrever em processos seletivos, conhecer os parceiros e buscar novos clientes.
+👋 Bem-vindos ao Projeto de Desenvolvimento do Site da CryptoJR 🚀
+
+🌐 Aqui, na primeira empresa júnior do Brasil focada em web3, estamos empolgados em apresentar nosso novo site!
+
+O que você encontrará no nosso site:
+
+📌 Sobre a CryptoJR: Conheça nossa organização, nossa missão e visão.
+
+👩‍💼 Processos Seletivos: Fique por dentro das oportunidades de se juntar à nossa equipe.
+
+🤝 Parceiros: Saiba mais sobre as incríveis parcerias que fazem parte do nosso ecossistema.
+
+📈 Clientes em Potencial: Descubra como podemos ajudar a sua empresa a prosperar na web3.
+
+⏩ Não perca a chance de explorar o mundo da web3 conosco. Junte-se a essa jornada de inovação! 💫
+
+🔗 Visite o nosso site e faça parte desta revolução! 🔗
 
 ## Tecnologias Utilizadas
 
