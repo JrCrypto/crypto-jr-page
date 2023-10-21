@@ -22,7 +22,7 @@ O que você encontrará no nosso site:
 
 🔗 Visite o nosso site e faça parte desta revolução! 🔗
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 🛠️
 
 O site será desenvolvido utilizando as seguintes tecnologias:
 
@@ -31,7 +31,7 @@ O site será desenvolvido utilizando as seguintes tecnologias:
 - JavaScript / TypeScript
 - ReactJS / NextJS
 
-## Como Contribuir
+## Como Contribuir 🤝
 
 Este projeto é um esforço comunitário, e estamos felizes em receber contribuições de outros desenvolvedores interessados em colaborar. Para isso, basta seguir os seguintes passos:
 
@@ -50,7 +50,8 @@ git commit -m "sua mensagem de commit aqui"
 
 5. Aguarde a revisão e aprovação de suas alterações pela equipe de mantenedores do projeto.
 
-## Rodando o Projeto Localmente
+
+## Rodando o Projeto Localmente 🖥️
 
 Para rodar o projeto em sua máquina local, siga os passos abaixo:
 
@@ -69,4 +70,4 @@ npm start
 
 ## Considerações Finais
 
-Agradecemos a todos que desejarem contribuir com este projeto. Juntos, podemos construir um site de qualidade e ajudar muitas pessoas a aprenderem sobre o mundo do web3. Qualquer dúvida, entre em contato com a equipe de mantenedores do projeto através do email contato@cryptojr.org .
+Agradecemos imensamente a todos que desejam contribuir para tornar este projeto incrível. Juntos, estamos construindo um site de qualidade que ajudará muitas pessoas a explorar o mundo do web3. Se você tiver alguma dúvida ou precisa de assistência, não hesite em entrar em contato com a equipe de mantenedores do projeto através do email contato@cryptojr.org. Vamos fazer história! 💪🚀
